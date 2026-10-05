@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+joblib
+pandas
+# mesma versão do treino: o modelo.joblib guarda objetos do scikit-learn
+scikit-learn==1.9.1

@@ -1,0 +1,6 @@
+pandas
+numpy
+joblib
+matplotlib
+# mesma versão da api: o modelo.joblib guarda objetos do scikit-learn
+scikit-learn==1.9.1

@@ -1,0 +1,16 @@
+services:
+  modelo:
+    build: ./src/modelo
+    volumes:
+      - ./data:/data:ro
+      - ./models:/models
+
+  api:
+    build: ./backend
+    depends_on:
+      modelo:
+        condition: service_completed_successfully
+    volumes:
+      - ./models:/models:ro
+    ports:
+      - "8000:8000"
